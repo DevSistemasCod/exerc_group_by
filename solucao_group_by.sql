@@ -12,8 +12,9 @@
 
 -- 03) Liste os 3 funcionários com os menores salários em ordem decrescente.
 SELECT nome_funcionario, salario
-FROM ( SELECT nome_funcionario, salario FROM funcionario 
- ORDER BY salario LIMIT 3
+FROM ( SELECT nome_funcionario, salario 
+       FROM funcionario 
+       ORDER BY salario LIMIT 3
 ) 
 AS subconsulta
 ORDER BY salario DESC;
