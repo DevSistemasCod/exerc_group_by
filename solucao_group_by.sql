@@ -36,7 +36,7 @@
  FROM departamento d;
 
 
--- 07) Liste os departamentos e a quantidade de funcionários em cada departamento que têm um salário médio superior a 4000,
+-- 07) Liste os departamentos e a quantidade de funcionários em cada departamento que têm um salário médio superior a 3790.
  SELECT d.nome_depto, COUNT(*) AS qtd_funcionarios
  FROM departamento d
  WHERE d.sigla_depto IN (
